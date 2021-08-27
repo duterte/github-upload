@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      #logo {
+        font-family: sans-serif;
+        color: white;
+      }
+
+      #header {
+        background-color: lightblue;
+        padding-left: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+
+      body {
+        background-color: white;
+        font-family: monospace;
+      }
+
+      p {
+        /* border: 1px solid gray; */
+        width: 600px;
+        margin: 0 auto;
+        height: 100px;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 5px;
+        /* padding-top: 20px; */
+        /* padding-left: 20px; */
+        /* padding-right: 20px; */
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .btn-group {
+        width: 600px;
+        /* border: 5px dashed red; */
+        margin: 0 auto;
+        margin-top: 25px;
+        text-align: center;
+        color: purple;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 32px;
+      }
+
+      #push {
+        padding: 20px;
+        border: none;
+        background-color: purple;
+        color: white;
+        cursor: pointer;
+        font-weight: bolder;
+      }
+
+      .calculator {
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .total-value {
+        margin-top: 20px;
+      }
+
+			.profile-picture {
+				/* border: 1px solid black; */
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				padding: 10px;
+				box-shadow: 0 0 5px rgba(209, 14, 193, 0.5);
+				position: absolute;
+				right: 100px;
+				top: 100px;
+			}
+
+			#profile {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="logo">facebook</h1>
+    </div>
+
+		<div class="profile-picture">
+			<img src="German Ochea.png" alt="Profile picture" id="profile">
+		</div>
+		
+
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident,
+        harum!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+        voluptatibus aperiam, pariatur, nihil, ad quos et deleniti incidunt
+        blanditiis soluta enim nam eos eveniet aut.
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+        assumenda minima maiores expedita sit impedit.
+      </p>
+    </div>
+
+    <!-- <div class="btn-group">
+      <button id="push">Click me to change the background color</button>
+    </div> -->
+
+    <!-- <h2>Simple Calculator</h2> -->
+    <!-- <div class="calculator">
+      <input type="number" id="num1" placeholder="number1" />
+      <input type="number" id="num2" placeholder="number2" />
+      <button id="add">ADD +</button>
+      <div class="total-value">Total: <span id="total">N/A</span></div>
+    </div> -->
+
+    <!-- <script>
+      const headerElement = document.querySelector("#header");
+      const button = document.querySelector("#push");
+
+      function changeBackgroundColor() {
+        console.log("color has changed");
+        if (headerElement.style.backgroundColor === "lightblue") {
+          headerElement.style.backgroundColor = "red";
+        } else {
+          headerElement.style.backgroundColor = "lightblue";
+        }
+      }
+      button.addEventListener("click", changeBackgroundColor);
+
+      const num1 = document.querySelector("#num1");
+      const num2 = document.querySelector("#num2");
+      const add = document.querySelector("#add");
+      const total = document.querySelector("#total");
+
+      function addTwoNumbers(param1, param2) {
+        let result = param1 + param2;
+        console.log(result);
+        total.innerText = result;
+      }
+
+      function clickHandler() {
+        let param1 = Number(num1.value);
+        let param2 = Number(num2.value);
+        console.log(typeof param1);
+        console.log(typeof param2);
+        addTwoNumbers(param1, param2);
+      }
+
+      add.addEventListener("click", clickHandler);
+    </script> -->
+  </body>
+</html>
